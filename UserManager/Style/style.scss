@@ -1,0 +1,177 @@
+/**
+ * Stylesheet mainCSS
+ * 
+ * Contains all the styles required for the project
+ * 
+ * @project USer Manager
+ * @version 1.0
+ * @author Sugandha Singh
+ * @copyright 2015
+ */
+
+
+$divWidth:100%;
+$gap:2%; 
+$lightBorder:1px solid white;
+$darkgreen : rgba(41, 133, 127, 1);
+$lightred : rgba(247, 93, 104, 1);
+$darkBorder:1px solid $darkgreen;
+$textcolor: white;
+
+
+body{font-family: 'segoe ui'}
+
+/**
+ * -------------------------
+ * @section user table
+ * -------------------------
+ */
+#displayUserList
+{
+width:$divWidth;
+height:auto;
+text-align:center;
+display:none;
+}
+
+table{margin:5% auto auto auto;width:$divWidth - 10%;font-size:1.5em;
+border-collapse:collapse;}
+
+.hiddenCell{display:none;}
+
+thead{font-size:1.3em; background-color:rgba(41, 134, 127, 1);color:$textcolor;}
+
+tbody tr {color: #1c5e5a}
+
+tr:nth-child(2n){
+background-color:#C0ECE9;
+}
+
+td, th{border-left:$lightBorder; border-right:$lightBorder;
+border-top:$darkBorder; border-bottom:$darkBorder;position:relative;}
+
+.disabled{
+color:#52cbc3;
+font-style:italic;
+}
+
+/**
+ * -------------------------
+ * @section welcome page
+ * -------------------------
+ */
+#welcomeDiv{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+
+ h1{
+font-size:6em;color: $darkgreen; 
+}
+
+h2{
+font-size:3em;color: rgba(126, 216, 209, 1); //light green
+}
+
+input[type=button]{
+padding:1%;
+font-size:2em;
+background: $lightred;
+margin-right:2%;
+}
+
+}
+
+/**
+ * -------------------------
+ * @section navigation bar
+ * -------------------------
+ */
+
+#mainOptions
+{
+width:$divWidth - 30%;
+height:auto;
+background-color:$lightred;
+display:none;
+margin:auto;
+	
+	h1{
+		display:inline;
+		margin:3%;
+		font-size:3.5em;
+		color:$textcolor;
+		}
+
+input[type=button]
+{float:right;margin-top:2%;background-color:$lightred;margin-right:2%;
+&:hover{color:$darkgreen;}
+}
+
+}
+
+
+/**
+ * -------------------------
+ * @section Form styles
+ * -------------------------
+ */
+label{margin-top:$gap;font-size:2em;display:block;color:rgba(126, 216, 209, 1);}
+
+.inputDiv{margin-top: $gap - 1%;}
+
+input[type=text]{width:$divWidth - 70%;height:auto;font-size:1.5em;border: 1px solid rgba(126, 216, 209, 1);color: $darkgreen}
+
+input[type=button]{font-size:1.5em; height:auto; min-width:$divWidth - 85%;border:0;color:$textcolor}
+
+#addUser{margin-left:20%;clear:both;padding-top:2%;width:$divWidth;display:none;
+
+h1{font-size:3em;color:$darkgreen}
+
+input[type=button]{margin-top:3%;padding:0.7%;background-color:$darkgreen;margin-right:2%;}
+
+}
+
+.errorPara{font-size:1.2em;color:red;}
+
+
+/**
+ * -------------------------
+ * @section context menu
+ * -------------------------
+ */
+
+
+#options{position:absolute;margin-top:-3%;left:50%;;z-index:999;display:none;}
+
+ul{list-style-type:none;margin:0;background-color:$darkgreen;padding:0;color:$textcolor;}
+
+.triangle {
+            width:0;
+            height:0;
+            border-bottom:20px solid $darkgreen;
+            border-left:10px solid transparent;
+            border-right:10px solid transparent;
+margin-left:43%;
+        }
+
+li {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+
+
+/**
+ * -------------------------
+ * @section media queries
+ * -------------------------
+ */
+
+@media screen and (max-width: 600px) {
+  body{  font-size:12px;}
+
+}

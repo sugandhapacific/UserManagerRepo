@@ -1,0 +1,191 @@
+/**
+ * Stylesheet mainCSS
+ * 
+ * Contains all the styles required for the project
+ * 
+ * @project USer Manager
+ * @version 1.0
+ * @author Sugandha Singh
+ * @copyright 2015
+ */
+body {
+  font-family: 'segoe ui'; }
+
+/**
+ * -------------------------
+ * @section user table
+ * -------------------------
+ */
+#displayUserList {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: none; }
+
+table {
+  margin: 5% auto auto auto;
+  width: 90%;
+  font-size: 1.5em;
+  border-collapse: collapse; }
+
+.hiddenCell {
+  display: none; }
+
+thead {
+  font-size: 1.3em;
+  background-color: #29867f;
+  color: white; }
+
+tbody tr {
+  color: #1c5e5a; }
+
+tr:nth-child(2n) {
+  background-color: #C0ECE9; }
+
+td, th {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid #29857f;
+  border-bottom: 1px solid #29857f;
+  position: relative; }
+
+.disabled {
+  color: #52cbc3;
+  font-style: italic; }
+
+/**
+ * -------------------------
+ * @section welcome page
+ * -------------------------
+ */
+#welcomeDiv {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%; }
+  #welcomeDiv h1 {
+    font-size: 6em;
+    color: #29857f; }
+  #welcomeDiv h2 {
+    font-size: 3em;
+    color: #7ed8d1; }
+  #welcomeDiv input[type=button] {
+    padding: 1%;
+    font-size: 2em;
+    background: #f75d68;
+    margin-right: 2%; }
+
+/**
+ * -------------------------
+ * @section navigation bar
+ * -------------------------
+ */
+#mainOptions {
+  width: 70%;
+  height: auto;
+  background-color: #f75d68;
+  display: none;
+  margin: auto; }
+  #mainOptions h1 {
+    display: inline;
+    margin: 3%;
+    font-size: 3.5em;
+    color: white; }
+  #mainOptions input[type=button] {
+    float: right;
+    margin-top: 2%;
+    background-color: #f75d68;
+    margin-right: 2%; }
+    #mainOptions input[type=button]:hover {
+      color: #29857f; }
+
+/**
+ * -------------------------
+ * @section Form styles
+ * -------------------------
+ */
+label {
+  margin-top: 2%;
+  font-size: 2em;
+  display: block;
+  color: #7ed8d1; }
+
+.inputDiv {
+  margin-top: 1%; }
+
+input[type=text] {
+  width: 30%;
+  height: auto;
+  font-size: 1.5em;
+  border: 1px solid #7ed8d1;
+  color: #29857f; }
+
+input[type=button] {
+  font-size: 1.5em;
+  height: auto;
+  min-width: 15%;
+  border: 0;
+  color: white; }
+
+#addUser {
+  margin-left: 20%;
+  clear: both;
+  padding-top: 2%;
+  width: 100%;
+  display: none; }
+  #addUser h1 {
+    font-size: 3em;
+    color: #29857f; }
+  #addUser input[type=button] {
+    margin-top: 3%;
+    padding: 0.7%;
+    background-color: #29857f;
+    margin-right: 2%; }
+
+.errorPara {
+  font-size: 1.2em;
+  color: red; }
+
+/**
+ * -------------------------
+ * @section context menu
+ * -------------------------
+ */
+#options {
+  position: absolute;
+  margin-top: -3%;
+  left: 50%;
+  z-index: 999;
+  display: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: #29857f;
+  padding: 0;
+  color: white; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #29857f;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: 43%; }
+
+li {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+/**
+ * -------------------------
+ * @section media queries
+ * -------------------------
+ */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=mainCSS.css.map */

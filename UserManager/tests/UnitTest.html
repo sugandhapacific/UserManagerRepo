@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Unit Tests</title>
+</head>
+<body>
+   <div id="mocha"></div>
+	<script src="../Scripts/vendors/expect.js"></script>
+	<script src="../Scripts/vendors/mocha.js"></script>
+	<script src="../Scripts/ajaxWrapper.js"></script>
+    <script>mocha.setup("bdd");</script>
+	<script src="../tests/tests.js"></script>
+    <script>
+        mocha.ignoreLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
